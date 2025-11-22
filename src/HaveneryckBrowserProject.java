@@ -27,11 +27,16 @@ public class HaveneryckBrowserProject extends Application {
 	public static void main(String[] args) {
 		launch(args);
 	}
-	// Método para inserir http se o usuario não digitar
-	public String formataUrl (String url) {
-		if (!url.startsWith("http://") && !url.startsWith("https://")) {
-			url = "http://" + url;
-		}
-		return url;
+	public String formataUrl(String url) {
+    // Trata entrada nula ou vazia
+    if (url == null || url.trim().isEmpty()) {
+        return "https://www.google.com";
+    }
+    url = url.trim(); // Remove espaços extras no início/fim
+    // Adiciona protocolo se necessário
+    if (!url.startsWith("http://") && !url.startsWith("https://")) {
+        url = "http://" + url;
+    }
+    return url;
 	}
 }
