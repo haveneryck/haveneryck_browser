@@ -1,17 +1,30 @@
-# Mini Navegador Web em Java
+# 🖥️ Haveneryck Browser
 
-Aplicação simples desenvolvida em **JavaFX** que permite navegar na web a partir de uma URL digitada pelo usuário. Projeto criado para consolidar conhecimentos em interface gráfica, manipulação de eventos e integração com componentes web.
+Um mini navegador web desenvolvido em **JavaFX**, criado para consolidar conhecimentos em interface gráfica, manipulação de eventos e integração com componentes web.  
+Agora com **botões de navegação** para melhorar a experiência do usuário!
 
-## 🖥️ Funcionalidades
+---
+
+## 🚀 Funcionalidades
+
 - Campo de entrada para digitar URLs
-- Carregamento automático ao pressionar Enter
+- Carregamento automático ao pressionar **Enter**
 - Adiciona `http://` automaticamente se necessário
-- Navegação básica com WebView do Java
+- Navegação básica com **WebView** do JavaFX
+- **Botões de navegação:**
+  - ⬅️ Voltar
+  - ➡️ Avançar
+  - 🔄 Recarregar
+
+---
 
 ## 🛠️ Tecnologias utilizadas
+
 - **Java 22**
-- **JavaFX** (WebView, TextField)
+- **JavaFX** (WebView, TextField, Buttons)
 - **Git & GitHub**
+
+---
 
 ## ▶️ Como executar
 
