@@ -39,6 +39,14 @@ public class HaveneryckBrowserProject extends Application {
 
 	    campoUrl.setOnAction(evento -> motor.load(formataUrl(campoUrl.getText())));
 
+
+	    // Sincroniza o campo de URL com a navegação real
+		motor.locationProperty().addListener((obs, oldUrl, newUrl) -> {
+		    if (newUrl != null) {
+		        campoUrl.setText(newUrl);
+		    }
+		});
+
 	    // Layout
 	    HBox barraBotoes = new HBox(5);
 	    barraBotoes.getChildren().addAll(btnVoltar, btnAvancar, btnRecarregar);
